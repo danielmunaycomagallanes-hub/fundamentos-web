@@ -1,0 +1,86 @@
+/* Contenedor responsivo del formulario */
+.form-elegante {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-elegante label {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #495057;
+    font-size: 0.95rem;
+}
+
+/* Estilo plano y elegante para input text y select */
+.form-elegante input[type="text"],
+.form-elegante select {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    background-color: #fcfcfc;
+    color: #495057;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+    box-sizing: border-box;
+}
+
+/* Énfasis en el control activo (al hacer clic o navegar con Enter/Tab) */
+.form-elegante input[type="text"]:focus,
+.form-elegante select:focus {
+    border-color: #3498db;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.15);
+}
+
+/* Estilos para botones */
+.form-elegante button,
+.form-elegante input[type="submit"] {
+    display: inline-block;
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    margin-top: 0.5rem;
+}
+
+.form-elegante button:hover,
+.form-elegante input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Énfasis al enfocar el botón mediante teclado */
+.form-elegante button:focus,
+.form-elegante input[type="submit"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.4);
+}
+
+/* Diseño responsivo adaptativo para pantallas pequeñas */
+@media (max-width: 768px) {
+    .form-elegante {
+        padding: 1rem;
+        box-shadow: none;
+        background: transparent;
+    }
+}

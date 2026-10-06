@@ -1,0 +1,41 @@
+/* Estilos generales para la tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  margin: 20px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Estilo para el encabezado de la tabla */
+thead th {
+  background-color: #2c3e50;
+  color: #ffffff;
+  text-align: left;
+  padding: 12px 16px;
+  font-weight: bold;
+}
+
+/* Estilo para todas las celdas */
+th, td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Filas cebreadas (filas pares con color de fondo alterno) */
+tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+/* Efecto hover sobre la fila activa */
+tbody tr:hover {
+  background-color: #e2e8f0;
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+}

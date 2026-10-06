@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- CSS: Hojas de estilo en cascada -->
+  <!-- selector: {} -->
+   <!-- ¿Que es selctor; a quien adecta los atributos estilos -->
+  <!-- etiqueta {}, .unaclase{}, #identificador -->
+  <style>
+
+    *{
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+    /* Solo se puede usar una vez */
+    #titulo{
+      color: blue;
+      text-align: center;
+      text-transform: uppercase; /* Mayusculas */
+      font-weight: bold; /* Negrita */
+    }
+    
+    /* Le afecta a todas las etiquetas <p> */
+    p{
+      color: red; 
+      text-align: center;  
+      font-style: italic;
+      margin-top: 2em; /* 1em = 16px = 1M */
+      margin-bottom: 4em;
+    }
+
+    /* Clase que puede heredarse muchas veces */
+    .importante{
+      background-color: rgb(75, 250, 227);
+      border: 3px double black; /* dotted, solid, double, dashed*/
+      padding: 1em; /* Espacio interno */
+    }
+
+    .caja{
+      background-color: aquamarine;
+      display: inline-block;
+      height: 60px;
+      padding-top: 40px;
+      text-align: center;
+      width: 100px;
+    }
+
+    .fondoimg{
+      background-image: url('./images/goku_normal.webp');
+    }
+
+
+  </style>
+
+<h1 id="titulo">Fundamentos CSS</h1>
+<!-- atributo: valor; atributo: valor -->
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat temporibus natus deleniti voluptatum impedit velit itaque omnis voluptatibus consequuntur magni ex explicabo similique fugit totam, officiis voluptate modi! Magnam, labore!
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, amet illo hic recusandae deserunt illum laudantium voluptatibus sed quisquam? Iure velit tenetur dolore libero quae maxime sit qui porro consequuntur.
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro dignissimos quod veniam voluptatem nulla quidem exercitationem dolor, cumque vitae. Distinctio iusto eaque sed explicabo eum a doloribus inventore, velit voluptatem?
+
+  </p>
+
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat temporibus natus deleniti voluptatum impedit velit itaque omnis voluptatibus consequuntur magni ex explicabo similique fugit totam, officiis voluptate modi! Magnam, labore!
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, amet illo hic recusandae deserunt illum laudantium voluptatibus sed quisquam? Iure velit tenetur dolore libero quae maxime sit qui porro consequuntur.
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro dignissimos quod veniam voluptatem nulla quidem exercitationem dolor, cumque vitae. Distinctio iusto eaque sed explicabo eum a doloribus inventore, velit voluptatem?
+
+  </p>
+
+  <p class="importante", >
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat temporibus natus deleniti voluptatum impedit velit itaque omnis voluptatibus consequuntur magni ex explicabo similique fugit totam, officiis voluptate modi! Magnam, labore!
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, amet illo hic recusandae deserunt illum laudantium voluptatibus sed quisquam? Iure velit tenetur dolore libero quae maxime sit qui porro consequuntur.
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro dignissimos quod veniam voluptatem nulla quidem exercitationem dolor, cumque vitae. Distinctio iusto eaque sed explicabo eum a doloribus inventore, velit voluptatem?
+
+  </p>
+
+  <hr> <!-- Crea una linea horizontal -->
+<br><!-- Salto de linea -->
+
+<div class="caja">
+  Caja 1
+</div>
+
+<div class="caja">
+  Caja 2
+</div>
+
+</body>
+</html>
